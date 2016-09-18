@@ -178,7 +178,7 @@ public class ScreenCapture extends JFrame implements MouseInputListener,
 		save.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (chooser.showOpenDialog(ScreenCapture.this) == JFileChooser.APPROVE_OPTION) {
+				if (chooser.showSaveDialog(ScreenCapture.this) == JFileChooser.APPROVE_OPTION) {
 					saveFile = chooser.getSelectedFile();
 					props.setProperty("directory",
 							chooser.getCurrentDirectory().getAbsolutePath());
